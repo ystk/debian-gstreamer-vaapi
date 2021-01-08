@@ -1,0 +1,115 @@
+gstreamer-vaapi (1.10.4-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+  * debian/control:
+    + Add myself to Uploaders.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 23 Feb 2017 16:40:04 +0200
+
+gstreamer-vaapi (1.10.2-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Remove all patches; applied upstream.
+
+ -- Vincent Cheng <vcheng@debian.org>  Sat, 03 Dec 2016 16:59:25 -0800
+
+gstreamer-vaapi (1.10.1-1) unstable; urgency=medium
+
+  * Add gbp.conf explicitly enabling pristine-tar
+  * New upstream version 1.10.1
+  * Don't expose GL texture if not supported. Fixes gst-vaapi usage on wayland
+    with gl texture upload capable sinks (bgo#772838)
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 18 Nov 2016 21:53:50 +0100
+
+gstreamer-vaapi (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Vincent Cheng <vcheng@debian.org>  Thu, 10 Nov 2016 23:04:45 -0800
+
+gstreamer-vaapi (1.8.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Vincent Cheng <vcheng@debian.org>  Fri, 02 Sep 2016 00:10:19 -0700
+
+gstreamer-vaapi (1.8.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Vincent Cheng <vcheng@debian.org>  Thu, 09 Jun 2016 21:20:17 -0700
+
+gstreamer-vaapi (1.8.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * control: Bump policy to 3.9.8, no changes.
+
+ -- Vincent Cheng <vcheng@debian.org>  Mon, 25 Apr 2016 19:58:54 -0700
+
+gstreamer-vaapi (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * watch: Update the url.
+  * control: Bump libgstreamer build-deps.
+  * control: Add libgles2-mesa-dev to build-deps.
+  * Remove library and -dev packages as upstream doesn't build them anymore.
+  * control: Bump policy to 3.9.7, no changes.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 07 Apr 2016 12:47:58 +0300
+
+gstreamer-vaapi (0.7.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Vincent Cheng <vcheng@debian.org>  Wed, 23 Dec 2015 23:01:04 -0800
+
+gstreamer-vaapi (0.6.1-2) unstable; urgency=medium
+
+  * Add build-dep on libegl1-mesa-dev to fix FTBFS.
+
+ -- Vincent Cheng <vcheng@debian.org>  Thu, 01 Oct 2015 03:46:01 -0700
+
+gstreamer-vaapi (0.6.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Vincent Cheng <vcheng@debian.org>  Thu, 01 Oct 2015 00:32:44 -0700
+
+gstreamer-vaapi (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Update build-dep on gst 1.x to (>= 1.3).
+  * Update debian/copyright.
+  * Update homepage.
+  * Update Vcs-Browser to point to cgit interface (instead of gitweb).
+
+ -- Vincent Cheng <vcheng@debian.org>  Thu, 16 Jul 2015 00:16:32 -0700
+
+gstreamer-vaapi (0.5.10-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add build-depends on yasm.
+  * Update Standards version to 3.9.6, no changes required.
+
+ -- Vincent Cheng <vcheng@debian.org>  Wed, 29 Apr 2015 17:44:53 -0700
+
+gstreamer-vaapi (0.5.9-2) unstable; urgency=medium
+
+  * Remove spurious build-deps: libva-drm1, libavcodec-dev. (Closes: #757283)
+  * Drop Build-Depends-Indep and build docs unconditionally on all archs.
+
+ -- Vincent Cheng <vcheng@debian.org>  Wed, 06 Aug 2014 23:56:00 -0700
+
+gstreamer-vaapi (0.5.9-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add new build-dep: libwayland-dev.
+
+ -- Vincent Cheng <vcheng@debian.org>  Mon, 04 Aug 2014 15:52:28 -0700
+
+gstreamer-vaapi (0.5.8-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #736217)
+
+ -- Vincent Cheng <vcheng@debian.org>  Tue, 03 Jun 2014 01:16:23 -0700

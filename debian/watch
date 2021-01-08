@@ -1,0 +1,2 @@
+version=3
+https://gstreamer.freedesktop.org/src/gstreamer-vaapi/ gstreamer-vaapi-(.*)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

@@ -1,0 +1,58 @@
+Source: gstreamer-vaapi
+Section: libs
+Priority: optional
+Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Timo Aaltonen <tjaalton@ubuntu.com>,
+ Vincent Cheng <vcheng@debian.org>,
+ Sjoerd Simons <sjoerd@debian.org>,
+ Sebastian Dröge <slomo@debian.org>
+Build-Depends:
+ debhelper (>= 9),
+ dh-autoreconf,
+ gtk-doc-tools (>= 1.9),
+ libdrm-dev,
+ libegl1-mesa-dev,
+ libgl1-mesa-dev,
+ libgles2-mesa-dev,
+ libglib2.0-dev,
+ libgstreamer-plugins-bad1.0-dev (>= 1.7.91),
+ libgstreamer-plugins-base1.0-dev (>= 1.7.91),
+ libgstreamer1.0-dev (>= 1.7.91),
+ libudev-dev,
+ libva-dev (>= 1.0.9),
+ libwayland-dev,
+ libx11-dev,
+ libxrandr-dev,
+ mesa-common-dev,
+ yasm
+Standards-Version: 3.9.8
+Homepage: https://github.com/01org/gstreamer-vaapi/
+Vcs-Git: https://anonscm.debian.org/git/pkg-gstreamer/gstreamer-vaapi.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-gstreamer/gstreamer-vaapi.git
+
+Package: gstreamer1.0-vaapi
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: gstreamer1.0-vaapi-doc
+Description: VA-API plugins for GStreamer
+ Gstreamer-vaapi is a collection of GStreamer plugins and helper libraries that
+ allow hardware accelerated video decoding, encoding and processing through
+ VA-API.
+ .
+ This package contains GStreamer plugins for VA-API support:
+ - `vaapiconvert': converts from YUV pixels to VA surfaces
+ - `vaapisink': a VA-API based video sink
+
+Package: gstreamer1.0-vaapi-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: GStreamer VA-API documentation and manuals
+ Gstreamer-vaapi is a collection of GStreamer plugins and helper libraries that
+ allow hardware accelerated video decoding, encoding and processing through
+ VA-API.
+ .
+ This package contains documentation for libraries and elements.
